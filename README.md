@@ -3,6 +3,10 @@
 ## Overview
 This project showcases a scalable and modern architecture for detecting and filtering review bombing activities in real-time, leveraging the power of Confluent, AWS, and MongoDB. The setup processes Amazon review data to identify fake reviews and integrate valid reviews with user account information. Furthermore, we utilize Amazon Bedrock to categorize the reviews into interesting categories and generate review summaries.
 
+<div padding=25px>
+    <img src="images/architecture.png" width=90% height=70%>
+</div>
+
 ## Agenda
 1. [Launch Confluent Cloud and set up your cluster](#step-1)
 2. [Prepare Flink, Kafka topics and API keys](#step-2)
@@ -72,6 +76,20 @@ With these prerequisites in place, you'll be ready to explore and run the demo s
 7. View the associated Configuration & Cost, Usage Limits, and Uptime SLA information before launching.
 
 8. Click **Launch Cluster.**
+
+## **AI Model Inference in Confluent Cloud for Apache Flink**
+
+<div align="center" padding=25px>
+    <img src="images/flink-ai-model-inference.jpeg" width=80% height=60%>
+</div>
+
+Confluent Cloud for Apache Flink®️ offers powerful AI model inference capabilities through the built-in **ML_PREDICT** and **ML_EVALUATE** functions, allowing remote AI/ML models to be invoked directly within Flink SQL queries. This streamlines the development and deployment of AI applications, enabling seamless integration of data processing and AI/ML tasks on a single platform. Additionally, Confluent Cloud supports read-only external tables, allowing federated query execution across external vector databases like MongoDB, Pinecone, and Elasticsearch, further enriching data pipelines.
+
+With Flink SQL's AI model inference, data can be dynamically enriched with real-time machine learning predictions, enabling smarter, more responsive applications. For example, imagine a user leaving a negative product review — instead of a basic response, the app could analyze the review, identify the root cause, and offer real-time solutions, enhancing the user experience.
+
+To learn more, visit:  
+- [Flink AI Model Inference Overview](https://docs.confluent.io/cloud/current/flink/reference/functions/model-inference-functions.html)
+- [Run an AI Model](https://docs.confluent.io/cloud/current/ai/ai-model-inference.html#flink-sql-ai-model)
 
 ## <a name="step-2"></a>**Prepare Flink, Kafka topics and API keys**
 1. Create a Flink workspace by navigating to the cluster view of the environment and selecting the Flink section. Follow the steps as demonstrated below
