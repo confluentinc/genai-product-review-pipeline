@@ -3,8 +3,8 @@
 ## Overview
 This project showcases a scalable and modern architecture for detecting and filtering review bombing activities in real-time, leveraging the power of Confluent, AWS, and MongoDB. The setup processes Amazon review data to identify fake reviews and integrate valid reviews with user account information. Furthermore, we utilize Amazon Bedrock to categorize the reviews into interesting categories and generate review summaries.
 
-<div align="center" padding=25px>
-    <img src="images/architecture.png" width=80% height=60%>
+<div padding=25px>
+    <img src="images/architecture.png" width=90% height=70%>
 </div>
 
 ## Agenda
@@ -78,6 +78,10 @@ With these prerequisites in place, you'll be ready to explore and run the demo s
 8. Click **Launch Cluster.**
 
 ## **AI Model Inference in Confluent Cloud for Apache Flink**
+
+<div align="center" padding=25px>
+    <img src="images/flink-ai-model-inference.jpeg" width=80% height=60%>
+</div>
 
 Confluent Cloud for Apache Flink®️ offers powerful AI model inference capabilities through the built-in **ML_PREDICT** and **ML_EVALUATE** functions, allowing remote AI/ML models to be invoked directly within Flink SQL queries. This streamlines the development and deployment of AI applications, enabling seamless integration of data processing and AI/ML tasks on a single platform. Additionally, Confluent Cloud supports read-only external tables, allowing federated query execution across external vector databases like MongoDB, Pinecone, and Elasticsearch, further enriching data pipelines.
 
