@@ -80,7 +80,7 @@ With these prerequisites in place, you'll be ready to explore and run the demo s
 ## **AI Model Inference in Confluent Cloud for Apache Flink**
 
 <div align="center" padding=25px>
-    <img src="images/flink-ai-model-inference.jpeg" width=80% height=60%>
+    <img src="images/flink-ai-model-inference.png" width=80% height=60%>
 </div>
 
 Confluent Cloud for Apache Flink®️ offers powerful AI model inference capabilities through the built-in **ML_PREDICT** and **ML_EVALUATE** functions, allowing remote AI/ML models to be invoked directly within Flink SQL queries. This streamlines the development and deployment of AI applications, enabling seamless integration of data processing and AI/ML tasks on a single platform. Additionally, Confluent Cloud supports read-only external tables, allowing federated query execution across external vector databases like MongoDB, Pinecone, and Elasticsearch, further enriching data pipelines.
