@@ -37,7 +37,7 @@ To ensure a smooth and successful experience with this demo, please make sure yo
 
 - **Clone the repository**
     ```
-    git clone https://github.com/sharang-ramana/confluent-mongo-aws-power-of-3.git
+    git clone https://github.com/confluentinc/genai-product-review-pipeline.git
     ```
 
 With these prerequisites in place, you'll be ready to explore and run the demo seamlessly.
