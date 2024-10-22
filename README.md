@@ -463,7 +463,7 @@ This lambda function summarizes the review after consuming off the `valid_review
 
 ### **Filter down to unique reviews**
 This lambda function finds reviews that are unique. This could come in the form of length/comprehensiveness, a varied perspective, etc. This is done by finding reviews that have the least amount of matches after consuming off the `valid_reviews_with_user_info_json` topic. The newly generated review and associated details are then publish to the `enriched_review` topic.
-1. Navigate to the [review_summarizer](https://us-east-1.console.aws.amazon.com/lambda/home?region=us-east-1#/functions/review_summarizer?tab=code) Lambda function.
+1. Navigate to the [semantic_filter](https://us-east-1.console.aws.amazon.com/lambda/home?region=us-east-1#/functions/semantic_filter?tab=code) Lambda function.
 1. Click `Add Trigger`. 
 1. Search for `Confluent` and select the `Apache Kafka` option. What we are doing is creating a native integration between Confluent and AWS Lambda wherein AWS Lambda will spin up a consumer group and listen in on a topic we specify. 
 1. Use the following configurations:
